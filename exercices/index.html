@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<head>
+    <h1>Exercices : Animation en CSS</h1>
+</head>
+<main>
+    <section>
+        <h2>Ecercices 1 : Animation Clignotement</h2>
+
+            <!--Exercice 1 : Clignotement
+            Objectif : créer un texte qui clignote en blanc puis rouge, en boucle.
+
+            Crée une div avec un texte : "Warning!"
+
+            Utilise @keyframes pour alterner color: white et color: red
+
+            Répète à l’infini (infinite)-->
+
+        <div class="warning-box">
+            <p>Warning !</p>
+        </div> 
+    </section>
+
+    <section>
+        <h2>Exercice 2 : Glissement à l'apparition</h2>
+
+        <!-- Exercice 2 : Slide In (glissement à l’apparition)
+        Objectif : faire glisser une carte depuis la gauche quand elle apparaît.
+
+        Crée une div .card
+
+        Définis une animation slideInLeft
+
+        Utilise transform: translateX(-200px) → translateX(0)
+
+        Lance l’animation automatiquement (animation-name, animation-duration, etc.) -->
+
+        <div class="card">
+            <img src="img/card.jpg" alt="un fond d'ecran">
+        </div>
+    </section>
+
+    <section>
+        <h2>Exercice 3 : Rotation infinie</h2>
+
+        <!-- Exercice 3 : Rotation infinie
+        Objectif : créer une image qui tourne en boucle lentement.
+
+        Utilise transform: rotate()
+
+        animation-iteration-count: infinite
+
+        Ajoute une image (<img src="..." />) -->
+
+        <div class="img-box">
+            <img src="img/illustration.jpg" alt="illustration d'été">
+        </div>
+
+    </section>
+
+    <section>
+        <h2>Exercice 4 : Bouton qui pulse</h2>
+        <!-- Exercice 4 : Bouton qui pulse
+        Objectif : au survol, le bouton "bat" comme un cœur.
+
+        scale(1) → scale(1.1) → scale(1)
+
+        Durée : 0.4s
+
+        Transition douce
+
+        Bonus : ajoute une ombre qui augmente un peu -->
+
+        <button class="btn-box">
+            <p>Bat</p>
+        </button>
+        
+    </section>
+
+    <section>
+        <h2> Exercice 5 : Apparition en fondu + glissement </h2>
+        <!-- Exercice 5 : Apparition en fondu + glissement (fade + slide)
+        Objectif : Faire apparaître une boîte depuis le bas, avec un effet de fondu.
+
+        Propriétés à utiliser               Idée d’effet
+        
+        transform: translateY(...)	        Glissement vertical
+        opacity                             Fondu (transparence)
+        animation-fill-mode: forwards	    Pour que l’effet reste visible
+
+        Tu peux combiner les deux dans un @keyframes appelé fadeUp. -->
+
+        <div class="imgbox-box">
+            <img src="img/box.jpg" alt="une boite">
+        </div>
+
+    </section>
+
+    <section>
+        <h2> Exercice 6 : Flamme animée</h2>
+        <!-- Exercice 6 : Flamme animée (effet feu abstrait)
+        Objectif : Simuler une petite flamme en bougeant une forme orange ou rouge de manière irrégulière (ça peut être un div en rond).
+
+        | À tester : |
+
+        transform: scale() et translateY() en boucle
+
+        border-radius: 50% pour que la forme soit ronde
+
+        animation: fire 1s infinite alternate
+
+        💡 Astuce : change légèrement la taille et la position pour donner un effet vivant. -->
+
+        <div class="fire-box">
+
+        </div>
+
+    </section>
+
+    <section>
+        <h2>Exercice 7 : Écriture qui se dessine</h2>
+        <!-- Exercice 7 : Écriture qui se dessine (texte qui apparaît lettre par lettre)
+        Objectif : Simuler du texte qui s’écrit tout seul.
+
+        | À utiliser : |
+
+        animation: typing
+
+        white-space: nowrap
+
+        overflow: hidden
+
+        width qui passe de 0 à 100% dans @keyframes
+
+        💡 Bonus : tu peux ajouter un curseur clignotant avec ::after et une animation blink. -->
+
+        <p class="texte-helloWorld">Hello world !!!</p>
+    </section>
+
+    <section class="exercice8-box">
+        <h2>Exercice 8 : Cœur qui bat lentement et infiniment</h2>
+        <!-- Exercice 8 : Cœur qui bat lentement et infiniment
+        Objectif : Créer une forme de cœur qui pulse doucement comme un vrai.
+
+        | Idées : |
+
+        Utilise un <div> en forme de cœur avec du CSS (transform: rotate(...))
+
+        Animation avec scale (comme dans l’exercice 4, mais plus doux, plus lent)
+
+        Couleur change légèrement au rythme
+
+        Tu peux le faire en pur CSS avec deux cercles + un carré transformé. -->
+
+        <div class="heart">
+
+        </div>
+    </section>
+
+    <section class="exercice9-box">
+        <h2>Exercice 9 : Boîte rebondissante</h2>
+        <!-- Exercice 9 : Boîte rebondissante (bounce infinie)
+        Objectif : Faire rebondir une boîte (comme une balle molle).
+
+        | Propriétés utiles : |
+
+        transform: translateY() vers le bas
+
+        animation-timing-function: ease-in / ease-out
+
+        animation-direction: alternate
+
+        animation-iteration-count: infinite -->
+
+        <div class="ball">
+
+        </div>
+
+    </section>
+    
+</main>
+
+</body>
+</html>

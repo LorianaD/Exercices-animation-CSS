@@ -1,0 +1,104 @@
+✏️ Exercice 1 : Clignotement
+Objectif : créer un texte qui clignote en blanc puis rouge, en boucle.
+
+Crée une div avec un texte : "Warning!"
+
+Utilise @keyframes pour alterner color: white et color: red
+
+Répète à l’infini (infinite)
+
+✏️ Exercice 2 : Slide In (glissement à l’apparition)
+Objectif : faire glisser une carte depuis la gauche quand elle apparaît.
+
+Crée une div .card
+
+Définis une animation slideInLeft
+
+Utilise transform: translateX(-200px) → translateX(0)
+
+Lance l’animation automatiquement (animation-name, animation-duration, etc.)
+
+✏️ Exercice 3 : Rotation infinie
+Objectif : créer une image qui tourne en boucle lentement.
+
+Utilise transform: rotate()
+
+animation-iteration-count: infinite
+
+Ajoute une image (<img src="..." />)
+
+✏️ Exercice 4 : Bouton qui pulse
+Objectif : au survol, le bouton "bat" comme un cœur.
+
+scale(1) → scale(1.1) → scale(1)
+
+Durée : 0.4s
+
+Transition douce
+
+Bonus : ajoute une ombre qui augmente un peu
+
+🎯 Exercice 5 : Apparition en fondu + glissement (fade + slide)
+Objectif : Faire apparaître une boîte depuis le bas, avec un effet de fondu.
+
+Propriétés à utiliser	            Idée d’effet
+
+transform: translateY(...)	        Glissement vertical
+opacity	                            Fondu (transparence)
+animation-fill-mode: forwards	    Pour que l’effet reste visible
+
+💡 Tu peux combiner les deux dans un @keyframes appelé fadeUp.
+
+🎯 Exercice 6 : Flamme animée (effet feu abstrait)
+Objectif : Simuler une petite flamme en bougeant une forme orange ou rouge de manière irrégulière (ça peut être un div en rond).
+
+| À tester : |
+
+transform: scale() et translateY() en boucle
+
+border-radius: 50% pour que la forme soit ronde
+
+animation: fire 1s infinite alternate
+
+💡 Astuce : change légèrement la taille et la position pour donner un effet vivant.
+
+🎯 Exercice 7 : Écriture qui se dessine (texte qui apparaît lettre par lettre)
+Objectif : Simuler du texte qui s’écrit tout seul.
+
+| À utiliser : |
+
+animation: typing
+
+white-space: nowrap
+
+overflow: hidden
+
+width qui passe de 0 à 100% dans @keyframes
+
+💡 Bonus : tu peux ajouter un curseur clignotant avec ::after et une animation blink.
+
+🎯 Exercice 8 : Cœur qui bat lentement et infiniment
+Objectif : Créer une forme de cœur qui pulse doucement comme un vrai.
+
+| Idées : |
+
+Utilise un <div> en forme de cœur avec du CSS (transform: rotate(...))
+
+Animation avec scale (comme dans l’exercice 4, mais plus doux, plus lent)
+
+Couleur change légèrement au rythme
+
+💡 Tu peux le faire en pur CSS avec deux cercles + un carré transformé.
+
+🎯 Exercice 9 : Boîte rebondissante (bounce infinie)
+Objectif : Faire rebondir une boîte (comme une balle molle).
+
+| Propriétés utiles : |
+
+transform: translateY() vers le bas
+
+animation-timing-function: ease-in / ease-out
+
+animation-direction: alternate
+
+animation-iteration-count: infinite

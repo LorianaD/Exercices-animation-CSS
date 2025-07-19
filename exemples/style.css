@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.magic-button {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Définition de l'animation */
+@keyframes zoomSpin {
+    
+    0% {
+    transform: scale(1) rotate(0deg);
+    background-color: #3498db;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    50% {
+    transform: scale(1.1) rotate(10deg);
+    background-color: #2ecc71;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+
+    100% {
+    transform: scale(1) rotate(0deg);
+    background-color: #3498db;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    
+}
+
+.magic-button:hover {
+    animation: zoomSpin 0.6s ease;
+}
